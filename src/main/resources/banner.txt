@@ -1,0 +1,38 @@
+${AnsiColor.BRIGHT_RED}
+ *  无可奉告 一颗赛艇
+ *  uJjYJYYLLv7r7vJJ5kqSFFFUUjJ7rrr7LLYLJLJ7                  *                                         ,s555SB@@&
+ *  JuJujuYLrvuEM@@@B@@@B@B@B@@@MG5Y7vLjYjJL                  *                                      :9H####@@@@@Xi
+ *  JYjYJvr7XM@BB8GOOE8ZEEO8GqM8OBBBMu77LLJ7                  *                                     1@@@@@@@@@@@@@@8
+ *  LJLY7ru@@@BOZ8O8NXFFuSkSu25X0OFZ8MZJ;vLv                  *                                   ,8@@@@@@@@@B@@@@@@8
+ *  YvL7i5@BM8OGGqk22uvriiriii;r7LuSZXEMXrvr                  *                                  :B@@@@X3hi8Bs;B@@@@@Ah,
+ *  vv7iU@BMNkF1uY7v7rr;iiii:i:i:ii7JEPNBPir                  *             ,8i                  r@@@B:     1S ,M@@@@@@#8;
+ *  L7iL@BM8Xjuujvv77rr;ri;i;:iiiii:iLXFOBJ:                  *            1AB35.i:               X@@8 .   SGhr ,A@@@@@@@@S
+ *  7ri@B@MOFuUS2Y7L7777rii;:::::i:iirjPG@O:                  *            1@h31MX8                18Hhh3i .i3r ,A@@@@@@@@@5
+ *  7:1B@BBOPjXXSJvrL7rr7iiii:i::::i;iv5MBB,                  *            ;@&i,58r5                 rGSS:     :B@@@@@@@@@@A
+ *  r:0@BBM8SFPX2Y77rri::iirri:::::iii75O@G.                  *             1#i  . 9i                 hX.  .: .5@@@@@@@@@@@1
+ *  7:SB@BBGqXPk0122UJL::i::r:::i:i;i:v2@Bk.                  *              sG1,  ,G53s.              9#Xi;hS5 3B@@@@@@@B1
+ *  ri:MB@BBEqEMGq2JLLL1u7.iX51u77LF27iSB@r,                  *               .h8h.,A@@@MXSs,           #@H1:    3ssSSX@1
+ *  ri,v@B@MB8@qqNEqN1u:5B8BOFE0S7ii7qMB@F::                  *               s ,@@@@@@@@@@@@Xhi,       r#@@X1s9M8    .GA981
+ *  ii,J80Eq1MZkqPPX5YkPE@B@iXPE52j7:vBjE7::                  *               ,. rS8H#@@@@@@@@@@#HG51;.  .h31i;9@r    .8@@@@BS;i;
+ *  ii:7MSqkS0PvLv7rrii0@L.Z1iLr::ir:rO,vi::                  *                .19AXXXAB@@@@@@@@@@@@@@#MHXG893hrX#XGGXM@@@@@@@@@@MS
+ *  ii::EZXPSkquLvii:iF@N:.,BUi7ri,::UY;r:::                  *                s@@MM@@@hsX#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&,
+ *  i::.2ONXqkPXS5FUUEOPP;..iSPXkjLYLLrr:::,                  *              :GB@#3G@@Brs ,1GM@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@B,
+ *  :::,iMXNP0NPLriiLGZ@BB1P87;JuL7r:7ri:::,                  *            .hM@@@#@@#MX 51  r;iSGAM@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8
+ *  :::,.UGqNX0EZF2uUjUuULr:::,:7uuvv77::::.                  *          :3B@@@@@@@@@@@&9@h :Gs   .;sSXH@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:
+ *  ::::..5OXqXNJ50NSY;i:.,,,:i77Yvr;v;,,::.                  *      s&HA#@@@@@@@@@@@@@@M89A;.8S.       ,r3@@@@@@@@@@@@@@@@@@@@@@@@@@@r
+ *  :::,:.jOEPqPJiqBMMMO8NqP0SYLJriirv:.:,:.                  *   ,13B@@@@@@@@@@@@@@@@@@@5 5B3 ;.         ;@@@@@@@@@@@@@@@@@@@@@@@@@@@i
+ *  ,:,,,.,Zq0P0X7vPFqF1ujLv7r:irrr7j7.,,::.                  *  5#@@#&@@@@@@@@@@@@@@@@@@9  .39:          ;@@@@@@@@@@@@@@@@@@@@@@@@@@@;
+ *  ,,,....0qk0080v75ujLLv7ri:i:rvj2J...,,,.                  *  9@@@X:MM@@@@@@@@@@@@@@@#;    ;31.         H@@@@@@@@@@@@@@@@@@@@@@@@@@:
+ *  ......8@UXqZEMNvJjr;ii::,:::7uuv...,.,,.                  *   SH#@B9.rM@@@@@@@@@@@@@B       :.         3@@@@@@@@@@@@@@@@@@@@@@@@@@5
+ *  .....B@BOvX88GMGk52vririiirJS1i.......,.                  *     ,:.   9@@@@@@@@@@@#HB5                 .M@@@@@@@@@@@@@@@@@@@@@@@@@B
+ *  .JEMB@B@BMvL0MOMMMO8PE8GPqSk2L:.........                  *           ,ssirhSM@&1;i19911i,.             s@@@@@@@@@@@@@@@@@@@@@@@@@@S
+ *  @B@@@B@M@B@L:7PGBOO8MOMOEP0Xri@B@Mk7,...                  *              ,,,rHAri1h1rh&@#353Sh:          8@@@@@@@@@@@@@@@@@@@@@@@@@#:
+ *  B@B@BBMBB@B@0::rJP8MO0uvvu7..,B@B@B@B@Z7                  *            .A3hH@#5S553&@@#h   i:i9S          #@@@@@@@@@@@@@@@@@@@@@@@@@A.
+ *  MMBM@BBB@B@B@Br:i,..:Lur:....7@OMMBM@B@@                  *===========================================================================
+ *  8OOMMMOMMMMBB@B:....,PZENNi..JBOZ8GMOOOO                  *    看你妹妹呀！
+
+
+${AnsiColor.BRIGHT_GREEN}
+Application Version: ${application.version}${application.formatted-version}
+${AnsiColor.BRIGHT_BLACK}
+Spring Boot Version: ${spring-boot.version}${spring-boot.formatted-version}
