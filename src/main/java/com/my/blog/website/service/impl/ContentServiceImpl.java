@@ -2,13 +2,24 @@ package com.my.blog.website.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.my.blog.website.constant.WebConst;
 import com.my.blog.website.dao.ContentVoMapper;
+import com.my.blog.website.enums.Types;
+import com.my.blog.website.exception.TipException;
 import com.my.blog.website.model.Vo.ContentVo;
 import com.my.blog.website.model.Vo.ContentVoExample;
 import com.my.blog.website.service.IContentService;
+import com.my.blog.website.service.IMetaService;
+import com.my.blog.website.untils.DateKit;
+import com.my.blog.website.untils.TaleUtils;
+import com.my.blog.website.untils.Tools;
+import com.vdurmont.emoji.EmojiParser;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -18,10 +29,92 @@ public class ContentServiceImpl implements IContentService {
     private static final Logger logger = LoggerFactory.getLogger(ContentServiceImpl.class);
     @Resource
     private ContentVoMapper contentVoMapper;
+
+    @Autowired
+    private IMetaService metaService;
+
     @Override
     public PageInfo<ContentVo> getArticlesWithPage(ContentVoExample example, int page, int limit) {
-        PageHelper.startPage(page,limit);
+        PageHelper.startPage(page, limit);
         List<ContentVo> contentVoList = contentVoMapper.selectByExampleWithBLOBs(example);
         return new PageInfo<>(contentVoList);
+    }
+
+    @Override
+    public ContentVo getContents(String cid) {
+        if (StringUtils.isNotBlank(cid)) {
+            if (Tools.isNumber(cid)) {
+                return contentVoMapper.selectByPrimaryKey(Integer.valueOf(cid));
+            } else {
+                ContentVoExample example = new ContentVoExample();
+                example.createCriteria().andSlugEqualTo(cid);
+                List<ContentVo> list = contentVoMapper.selectByExampleWithBLOBs(example);
+                if (list.size() != 1) {
+                    throw new TipException("query content by id and return is not one");
+                }
+                return list.get(0);
+            }
+        }
+        return null;
+    }
+
+    /**
+     * @param [contentVo]
+     * @return java.lang.String
+     * @author rfYang
+     * @date 2018/6/8 16:20
+     */
+    @Override
+    @Transactional
+    public String publish(ContentVo contentVo) {
+        if (contentVo == null) {
+            return "文章对象为空";
+        }
+        if (StringUtils.isBlank(contentVo.getTitle())) {
+            return "文章标题不能为空";
+        }
+        if (StringUtils.isBlank(contentVo.getContent())) {
+            return "文章类容不能为空";
+        }
+        if (contentVo.getTitle().length() > WebConst.MAX_TITLE_COUNT) {
+            return "文章标题过长";
+        }
+        if (contentVo.getContent().length() > WebConst.MAX_TEXT_COUNT) {
+            return "文章内容过长";
+        }
+        if (contentVo.getAuthorId() == null) {
+            return "请登陆后再发表文章";
+        }
+        if (StringUtils.isNotBlank(contentVo.getSlug())) {
+            if (contentVo.getSlug().length() < 5) {
+                return "路径太短了";
+            }
+            if (!TaleUtils.isPath(contentVo.getSlug())) {
+                return "您输入的不是合法路径";
+            }
+            ContentVoExample example = new ContentVoExample();
+            example.createCriteria().andTypeEqualTo(contentVo.getType()).andSlugEqualTo(contentVo.getSlug());
+            long count = contentVoMapper.countByExample(example);
+            if (count == 1) {
+                return "该路径已经存在";
+            }
+        } else {
+            contentVo.setSlug(null);
+        }
+        contentVo.setContent(EmojiParser.parseToAliases(contentVo.getContent()));//处理文章的emoji表情包
+        contentVo.setCommentsNum(0);
+        contentVo.setHits(0);
+        int time = DateKit.getCurrentUnixTime();
+        contentVo.setCreated(time);
+        contentVo.setModified(time);
+        contentVoMapper.insert(contentVo);
+
+        String categories = contentVo.getCategories();
+        String tags = contentVo.getTags();
+        Integer cid = contentVo.getCid();
+        metaService.saveMetas(cid, tags, Types.TAG.getType());
+        metaService.saveMetas(cid, categories, Types.CATEGORY.getType());
+
+        return WebConst.SUCCESS_RESULT;
     }
 }

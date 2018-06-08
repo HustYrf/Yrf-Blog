@@ -7,4 +7,8 @@ import java.util.List;
 public interface IMetaService {
 
     List<MetaVo> getMetas(String type);
+
+    void saveMetas(Integer cid, String tags, String type);
+
+    void saveOrUpdate(Integer cid, String name, String type);
 }
