@@ -12,4 +12,6 @@ public interface IUserService {
      * @return
      */
     UserVo queryUserById(Integer uid);
+
+    void updateById(UserVo user);
 }

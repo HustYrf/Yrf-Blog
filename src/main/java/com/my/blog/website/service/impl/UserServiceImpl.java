@@ -61,4 +61,23 @@ public class UserServiceImpl implements IUserService {
             throw new TipException("用户的密码不对");
         return list.get(0);
     }
+
+    /**
+     * 根据用户的id来更新
+     *
+     * @param [user]
+     * @return void
+     * @author rfYang
+     * @date 2018/6/8 10:00
+     */
+    @Override
+    public void updateById(UserVo user) {
+        if (user == null || user.getUid() == null) {
+            throw new TipException("userVo is null");
+        }
+        int count = userVoMapper.updateByPrimaryKeySelective(user);
+        if (count != 1) {
+            throw new TipException("update user is not return one");
+        }
+    }
 }

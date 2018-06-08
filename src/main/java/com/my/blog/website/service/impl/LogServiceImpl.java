@@ -39,7 +39,7 @@ public class LogServiceImpl implements ILogService {
 
     @Override
     public List<LogVo> getLogs(int page, int limit) {
-        logger.debug("Enter getLogs method:page={},linit={}",page,limit);
+        logger.debug("Enter getLogs method:page={},limit={}",page,limit);
         if (page <= 0) {
             page = 1;
         }

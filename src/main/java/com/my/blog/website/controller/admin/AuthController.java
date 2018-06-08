@@ -78,7 +78,7 @@ public class AuthController extends BaseController {
             if (error_count > 3) {
                 return RestResponseBo.fail("您已经输错了三次密码，10min后再来重试");
             }
-            cache.set("login_error_count", error_count + 1, 60 * 10);//过期时间10s
+            cache.set("login_error_count", error_count + 1, 60 * 10);//过期时间10min
             String msg = "登陆失败";
             if (e instanceof TipException) {
                 msg = e.getMessage();
