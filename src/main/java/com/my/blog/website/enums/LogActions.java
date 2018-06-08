@@ -1,7 +1,7 @@
 package com.my.blog.website.enums;
 
 public enum  LogActions {
-    LOGIN("登陆后台"),UP_INFO("修改个人信息");
+    LOGIN("登陆后台"),UP_INFO("修改个人信息"),UP_PWD("修改密码");
 
     private String action;
 

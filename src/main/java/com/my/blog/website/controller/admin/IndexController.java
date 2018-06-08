@@ -100,12 +100,20 @@ public class IndexController extends BaseController {
                                             HttpServletRequest request, HttpSession session) {
         UserVo requestUser = this.user(request);
         if (StringUtils.isNotBlank(screenName) && StringUtils.isNotBlank(email)) {
-            UserVo user = new UserVo();
-            user.setUid(requestUser.getUid());
-            user.setScreenName(screenName);
-            user.setEmail(email);
             try {
+                UserVo user = new UserVo();
+                user.setUid(requestUser.getUid());
+                user.setScreenName(screenName);
+                user.setEmail(email);
                 userService.updateById(user);
+                logService.insertLog(LogActions.UP_INFO.getAction(), GsonUtils.toJsonString(user), request.getRemoteAddr(), requestUser.getUid());
+
+                //完成插入操作后就要更新session
+                UserVo sessionUser = (UserVo) session.getAttribute(WebConst.LOGIN_SESSION_KEY);
+                sessionUser.setScreenName(screenName);
+                sessionUser.setEmail(email);
+                session.setAttribute(WebConst.LOGIN_SESSION_KEY, sessionUser);
+                return RestResponseBo.ok();
             } catch (Exception e) {
                 String msg = "更新错误";
                 if (e instanceof TipException) {
@@ -115,17 +123,60 @@ public class IndexController extends BaseController {
                 }
                 return RestResponseBo.fail(msg);
             }
-            logService.insertLog(LogActions.UP_INFO.getAction(), GsonUtils.toJsonString(user), request.getRemoteAddr(), requestUser.getUid());
-
-            //完成插入操作后就要更新session
-            UserVo sessionUser = (UserVo) session.getAttribute(WebConst.LOGIN_SESSION_KEY);
-            sessionUser.setScreenName(screenName);
-            sessionUser.setEmail(email);
-            session.setAttribute(WebConst.LOGIN_SESSION_KEY, sessionUser);
-            return RestResponseBo.ok();
-        }else{
+        } else {
             return RestResponseBo.fail("显示名或邮箱不能为空,更新失败！");
         }
 
+    }
+
+    /**
+     * 处理个人设置页面的密码修改操作
+     *
+     * @param [oldPassword, password, request, session]
+     * @return com.my.blog.website.model.Bo.RestResponseBo
+     * @author rfYang
+     * @date 2018/6/8 10:41
+     */
+    @PostMapping(value = "password")
+    @ResponseBody
+    public RestResponseBo updatePersonPassword(@RequestParam(value = "oldPassword") String oldPassword,
+                                               @RequestParam(value = "password") String password,
+                                               HttpServletRequest request,
+                                               HttpSession session) {
+        UserVo requestUser = this.user(request);
+        if (StringUtils.isBlank(oldPassword) || StringUtils.isBlank(password)) {
+            return RestResponseBo.fail("新旧密码不能为空");
+        }
+        if (!requestUser.getPassword().equals(TaleUtils.MD5encode(requestUser.getUsername() + oldPassword))) {
+            return RestResponseBo.fail("旧密码输入错误");
+        }
+        if (requestUser.getPassword().equals(TaleUtils.MD5encode(requestUser.getUsername() + password))) {
+            return RestResponseBo.fail("新密码和原密码不能相同");
+        }
+        if (password.length() < 6 || password.length() > 14) {
+            return RestResponseBo.fail("密码的长度为6-14位");
+        }
+        try {
+            UserVo user = new UserVo();
+            user.setUid(requestUser.getUid());
+            String newPassword = TaleUtils.MD5encode(requestUser.getUsername() + password);
+            user.setPassword(newPassword);
+            userService.updateById(user);
+            logService.insertLog(LogActions.UP_PWD.getAction(), GsonUtils.toJsonString(user), request.getRemoteAddr(), requestUser.getUid());
+
+            //更新session
+            UserVo sessionUser = (UserVo) session.getAttribute(WebConst.LOGIN_SESSION_KEY);
+            sessionUser.setPassword(newPassword);
+            session.setAttribute(WebConst.LOGIN_SESSION_KEY, sessionUser);
+            return RestResponseBo.ok();
+        } catch (Exception e) {
+            String msg = "更新密码失败";
+            if (e instanceof Exception) {
+                msg = e.getMessage();
+            } else {
+                logger.debug(msg, e);
+            }
+            return RestResponseBo.fail(msg);
+        }
     }
 }
