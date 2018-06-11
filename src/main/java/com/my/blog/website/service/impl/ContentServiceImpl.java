@@ -191,4 +191,12 @@ public class ContentServiceImpl implements IContentService {
         }
         return "博文为空";
     }
+
+
+    @Override
+    public void updateContentByCid(ContentVo contentVo) {
+        if (null != contentVo && null != contentVo.getCid()) {
+            contentVoMapper.updateByPrimaryKeySelective(contentVo);
+        }
+    }
 }

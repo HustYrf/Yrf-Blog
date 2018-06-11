@@ -22,4 +22,6 @@ public interface IContentService {
     String updateArticle(ContentVo contentVo);
 
     String deleteByCid(Integer cid);
+
+    void updateContentByCid(ContentVo temp);
 }
