@@ -18,4 +18,6 @@ public interface IContentService {
     ContentVo getContents(String cid);
 
     String publish(ContentVo contentVo);
+
+    String updateArticle(ContentVo contentVo);
 }

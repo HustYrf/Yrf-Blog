@@ -17,6 +17,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
@@ -123,7 +124,25 @@ public class ArticleController extends BaseController {
             return RestResponseBo.fail(result);
         }
         return RestResponseBo.ok();
+    }
 
-
+    /**
+     *修改用户
+     *  @author rfYang
+     * @date 2018/6/11 9:00
+     * @param [contentVo, request]
+     * @return com.my.blog.website.model.Bo.RestResponseBo
+     */
+    @PostMapping(value = "/modify")
+    @ResponseBody
+    public RestResponseBo modifyArticle(ContentVo contentVo, HttpServletRequest request){
+        UserVo userVo = this.user(request);
+        contentVo.setAuthorId(userVo.getUid());
+        contentVo.setType(Types.ARTICLE.getType());
+        String result = contentService.updateArticle(contentVo);
+        if(!WebConst.SUCCESS_RESULT.equals(result)){
+            return RestResponseBo.fail(result);
+        }
+        return RestResponseBo.ok();
     }
 }

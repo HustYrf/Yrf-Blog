@@ -10,6 +10,7 @@ import com.my.blog.website.model.Vo.ContentVo;
 import com.my.blog.website.model.Vo.ContentVoExample;
 import com.my.blog.website.service.IContentService;
 import com.my.blog.website.service.IMetaService;
+import com.my.blog.website.service.IRelationshipService;
 import com.my.blog.website.untils.DateKit;
 import com.my.blog.website.untils.TaleUtils;
 import com.my.blog.website.untils.Tools;
@@ -32,6 +33,9 @@ public class ContentServiceImpl implements IContentService {
 
     @Autowired
     private IMetaService metaService;
+
+    @Resource
+    private IRelationshipService relationshipService;
 
     @Override
     public PageInfo<ContentVo> getArticlesWithPage(ContentVoExample example, int page, int limit) {
@@ -115,6 +119,52 @@ public class ContentServiceImpl implements IContentService {
         metaService.saveMetas(cid, tags, Types.TAG.getType());
         metaService.saveMetas(cid, categories, Types.CATEGORY.getType());
 
+        return WebConst.SUCCESS_RESULT;
+    }
+
+    /**
+     * 修改用户博文
+     * @author rfYang
+     * @date 2018/6/11 9:04
+     * @param [contentVo]
+     * @return java.lang.String
+     */
+    @Override
+    @Transactional
+    public String updateArticle(ContentVo contents) {
+        if (null == contents) {
+            return "文章对象为空";
+        }
+        if (StringUtils.isBlank(contents.getTitle())) {
+            return "文章标题不能为空";
+        }
+        if (StringUtils.isBlank(contents.getContent())) {
+            return "文章内容不能为空";
+        }
+        int titleLength = contents.getTitle().length();
+        if (titleLength > WebConst.MAX_TITLE_COUNT) {
+            return "文章标题过长";
+        }
+        int contentLength = contents.getContent().length();
+        if (contentLength > WebConst.MAX_TEXT_COUNT) {
+            return "文章内容过长";
+        }
+        if (null == contents.getAuthorId()) {
+            return "请登录后发布文章";
+        }
+        if (StringUtils.isBlank(contents.getSlug())) {
+            contents.setSlug(null);
+        }
+
+        int time = DateKit.getCurrentUnixTime();
+        contents.setModified(time);
+        contents.setContent(EmojiParser.parseToAliases(contents.getContent()));//处理文章的emoji表情包
+
+        Integer cid = contents.getCid();
+        contentVoMapper.updateByPrimaryKeySelective(contents);
+        relationshipService.deleteById(cid, null);
+        metaService.saveMetas(cid, contents.getTags(), Types.TAG.getType());
+        metaService.saveMetas(cid, contents.getCategories(), Types.CATEGORY.getType());
         return WebConst.SUCCESS_RESULT;
     }
 }
