@@ -3,6 +3,7 @@ package com.my.blog.website.controller.admin;
 import com.github.pagehelper.PageInfo;
 import com.my.blog.website.constant.WebConst;
 import com.my.blog.website.controller.BaseController;
+import com.my.blog.website.enums.LogActions;
 import com.my.blog.website.enums.Types;
 import com.my.blog.website.exception.TipException;
 import com.my.blog.website.model.Bo.RestResponseBo;
@@ -144,5 +145,24 @@ public class ArticleController extends BaseController {
             return RestResponseBo.fail(result);
         }
         return RestResponseBo.ok();
+    }
+
+    /**
+     * 删除文章
+     * @author rfYang
+     * @date 2018/6/11 9:29
+     * @param [cid, request]
+     * @return com.my.blog.website.model.Bo.RestResponseBo
+     */
+    @PostMapping(value = "/delete")
+    @ResponseBody
+    public RestResponseBo deleteArticle(@RequestParam(value = "cid")int cid, HttpServletRequest request){
+        String result = contentService.deleteByCid(cid);
+        logService.insertLog(LogActions.DELETE.getAction(),cid+"",request.getRemoteAddr(),this.user(request).getUid());
+        if(result.equals(WebConst.SUCCESS_RESULT)){
+            return  RestResponseBo.ok();
+        }
+        return RestResponseBo.fail(result);
+
     }
 }

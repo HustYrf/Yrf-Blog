@@ -20,4 +20,6 @@ public interface IContentService {
     String publish(ContentVo contentVo);
 
     String updateArticle(ContentVo contentVo);
+
+    String deleteByCid(Integer cid);
 }

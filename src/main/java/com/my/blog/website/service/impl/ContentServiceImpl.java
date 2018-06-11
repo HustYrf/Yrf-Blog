@@ -167,4 +167,28 @@ public class ContentServiceImpl implements IContentService {
         metaService.saveMetas(cid, contents.getCategories(), Types.CATEGORY.getType());
         return WebConst.SUCCESS_RESULT;
     }
+
+    /**
+     * 删除文章
+     * @author rfYang
+     * @date 2018/6/11 9:30
+     * @param [cid]
+     * @return java.lang.String
+     */
+    @Override
+    @Transactional
+    public String deleteByCid(Integer cid) {
+        //cid是否有对应的博文
+        ContentVo contentVo = this.getContents(cid+"");
+        if(contentVo!=null){
+            int result = contentVoMapper.deleteByPrimaryKey(cid);
+            if(result==1){
+                relationshipService.deleteById(cid, null);
+                return WebConst.SUCCESS_RESULT;
+            }else{
+                return "博文条目数有错";
+            }
+        }
+        return "博文为空";
+    }
 }
