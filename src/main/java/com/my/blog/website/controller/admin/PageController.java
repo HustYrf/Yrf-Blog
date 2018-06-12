@@ -14,6 +14,7 @@ import com.my.blog.website.service.ILogService;
 import com.my.blog.website.untils.GsonUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -25,6 +26,7 @@ public class PageController extends BaseController {
     private IContentService contentService;
     @Resource
     private ILogService logService;
+
     /**
      * 到页面管理主界面
      *
@@ -61,10 +63,11 @@ public class PageController extends BaseController {
 
     /**
      * 修改page页面
-     * @author rfYang
-     * @date 2018/6/12 10:35
+     *
      * @param [cid, status, content, title, slug, allowComment, allowPing, request]
      * @return com.my.blog.website.model.Bo.RestResponseBo
+     * @author rfYang
+     * @date 2018/6/12 10:35
      */
     @PostMapping(value = "/modify")
     @ResponseBody
@@ -91,11 +94,58 @@ public class PageController extends BaseController {
             contentVo.setAllowPing(allowPing == 1);
         }
         String result = contentService.updateArticle(contentVo);
-        logService.insertLog(LogActions.UP_PAGE.getAction(),GsonUtils.toJsonString(contentVo),request.getRemoteAddr(),userVo.getUid());
-        if(!result.equals(WebConst.SUCCESS_RESULT)){
+        logService.insertLog(LogActions.UP_PAGE.getAction(), GsonUtils.toJsonString(contentVo), request.getRemoteAddr(), userVo.getUid());
+        if (!result.equals(WebConst.SUCCESS_RESULT)) {
             return RestResponseBo.fail(result);
         }
         return RestResponseBo.ok();
     }
 
+    /**
+     * 添加新页面
+     *
+     * @param [mv]
+     * @return org.springframework.web.servlet.ModelAndView
+     * @author rfYang
+     * @date 2018/6/12 11:03
+     */
+    @GetMapping(value = "/new")
+    public ModelAndView newPage(ModelAndView mv) {
+        mv.setViewName("admin/page_edit");
+        return mv;
+    }
+    /**
+     * 发布新页面
+     * @author rfYang
+     * @date 2018/6/12 11:10
+     * @param [title, content, status, slug, allowComment, allowPing, request]
+     * @return com.my.blog.website.model.Bo.RestResponseBo
+     */
+    @PostMapping(value = "/publish")
+    @ResponseBody
+    public RestResponseBo publishPage(@RequestParam String title, @RequestParam String content,
+                                      @RequestParam String status, @RequestParam String slug,
+                                      @RequestParam(required = false) Integer allowComment, @RequestParam(required = false) Integer allowPing, HttpServletRequest request) {
+        UserVo userVo = this.user(request);
+        UserVo users = this.user(request);
+        ContentVo contents = new ContentVo();
+        contents.setTitle(title);
+        contents.setContent(content);
+        contents.setStatus(status);
+        contents.setSlug(slug);
+        contents.setType(Types.PAGE.getType());
+        if (null != allowComment) {
+            contents.setAllowComment(allowComment == 1);
+        }
+        if (null != allowPing) {
+            contents.setAllowPing(allowPing == 1);
+        }
+        contents.setAuthorId(users.getUid());
+        String result = contentService.publish(contents);
+        logService.insertLog(LogActions.UP_PAGE.getAction(), GsonUtils.toJsonString(contents), request.getRemoteAddr(), userVo.getUid());
+        if (!WebConst.SUCCESS_RESULT.equals(result)) {
+            return RestResponseBo.fail(result);
+        }
+        return RestResponseBo.ok();
+    }
 }

@@ -696,3 +696,34 @@
 2018-06-12 10:45:15.745 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
 2018-06-12 10:45:15.745 [http-nio-8080-exec-4] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
 2018-06-12 10:45:22.506 [http-nio-8080-exec-8] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=query content by id and return is not one
+2018-06-12 11:03:27.803 [http-nio-8080-exec-4] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-12 11:03:27.804 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-12 11:03:27.828 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-12 11:03:27.828 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-12 11:03:27.832 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-12 11:03:27.832 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-12 11:03:27.835 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-12 11:03:27.835 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-12 11:03:27.849 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-12 11:03:27.849 [http-nio-8080-exec-4] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-12 11:10:56.593 [http-nio-8080-exec-4] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-12 11:10:56.594 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-12 11:10:56.618 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-12 11:10:56.619 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-12 11:10:56.623 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-12 11:10:56.624 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-12 11:10:56.627 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-12 11:10:56.627 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-12 11:10:56.638 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-12 11:10:56.638 [http-nio-8080-exec-4] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-12 12:12:31.129 [http-nio-8080-exec-8] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-12 12:12:31.130 [http-nio-8080-exec-8] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-12 12:12:31.140 [http-nio-8080-exec-8] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-12 12:12:31.140 [http-nio-8080-exec-8] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-12 12:12:31.141 [http-nio-8080-exec-8] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-12 12:12:31.141 [http-nio-8080-exec-8] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-12 12:12:31.146 [http-nio-8080-exec-8] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-12 12:12:31.146 [http-nio-8080-exec-8] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-12 12:12:31.156 [http-nio-8080-exec-8] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-12 12:12:31.157 [http-nio-8080-exec-8] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-12 12:13:30.727 [http-nio-8080-exec-9] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=Request method 'POST' not supported
