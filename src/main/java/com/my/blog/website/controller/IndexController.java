@@ -25,7 +25,7 @@ public class IndexController extends BaseController{
     @Autowired
     private ICommentService commentService;
 
-    @GetMapping(value={"article/{cid}/preview", "article/{cid}.html"})
+    @GetMapping(value={"article/{cid}/preview", "article/{cid}"})
     public String articlePreview(@PathVariable(value = "cid")String cid, HttpServletRequest request){
         ContentVo contentVo = contentService.getContents(cid);
         if(contentVo==null){
