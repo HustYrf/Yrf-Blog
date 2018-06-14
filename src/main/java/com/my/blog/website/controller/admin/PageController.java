@@ -87,9 +87,7 @@ public class PageController extends BaseController {
         contentVo.setStatus(status);
         contentVo.setContent(content);
         contentVo.setTitle(title);
-        if (allowComment != null) {
-            contentVo.setAllowComment(allowComment == 1);
-        }
+        contentVo.setAllowComment(true);
         if (allowPing != null) {
             contentVo.setAllowPing(allowPing == 1);
         }
@@ -134,9 +132,7 @@ public class PageController extends BaseController {
         contents.setStatus(status);
         contents.setSlug(slug);
         contents.setType(Types.PAGE.getType());
-        if (null != allowComment) {
-            contents.setAllowComment(allowComment == 1);
-        }
+        contents.setAllowComment(true);
         if (null != allowPing) {
             contents.setAllowPing(allowPing == 1);
         }

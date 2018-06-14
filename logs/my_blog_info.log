@@ -738,3 +738,400 @@
 2018-06-14 09:05:19.268 [http-nio-8080-exec-9] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
 2018-06-14 09:05:19.268 [http-nio-8080-exec-9] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
 2018-06-14 09:06:18.363 [http-nio-8080-exec-7] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=Request method 'POST' not supported
+2018-06-14 09:37:46.915 [http-nio-8080-exec-5] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-14 09:37:46.915 [http-nio-8080-exec-5] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-14 09:37:46.939 [http-nio-8080-exec-5] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-14 09:37:46.939 [http-nio-8080-exec-5] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-14 09:37:46.943 [http-nio-8080-exec-5] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-14 09:37:46.943 [http-nio-8080-exec-5] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-14 09:37:46.943 [http-nio-8080-exec-5] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-14 09:37:46.943 [http-nio-8080-exec-5] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-14 09:37:46.955 [http-nio-8080-exec-5] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-14 09:37:46.955 [http-nio-8080-exec-5] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-14 09:38:00.103 [http-nio-8080-exec-8] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-14 09:38:00.103 [http-nio-8080-exec-8] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-14 09:38:00.115 [http-nio-8080-exec-8] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-14 09:38:00.115 [http-nio-8080-exec-8] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-14 09:38:00.115 [http-nio-8080-exec-8] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-14 09:38:00.115 [http-nio-8080-exec-8] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-14 09:38:00.119 [http-nio-8080-exec-8] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-14 09:38:00.119 [http-nio-8080-exec-8] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-14 09:38:00.127 [http-nio-8080-exec-8] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-14 09:38:00.127 [http-nio-8080-exec-8] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-14 09:42:17.147 [http-nio-8080-exec-3] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-14 09:42:17.147 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-14 09:42:17.163 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-14 09:42:17.163 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-14 09:42:17.167 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-14 09:42:17.167 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-14 09:42:17.171 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-14 09:42:17.171 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-14 09:42:17.183 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-14 09:42:17.183 [http-nio-8080-exec-3] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-14 09:56:18.101 [http-nio-8080-exec-4] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-14 09:56:18.101 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-14 09:56:18.121 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-14 09:56:18.125 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-14 09:56:18.129 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-14 09:56:18.129 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-14 09:56:18.133 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-14 09:56:18.133 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-14 09:56:18.145 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-14 09:56:18.145 [http-nio-8080-exec-4] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-14 09:58:46.306 [http-nio-8080-exec-4] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-14 09:58:46.306 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-14 09:58:46.326 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-14 09:58:46.326 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-14 09:58:46.334 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-14 09:58:46.334 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-14 09:58:46.338 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-14 09:58:46.338 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-14 09:58:46.354 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-14 09:58:46.354 [http-nio-8080-exec-4] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-14 10:06:56.109 [http-nio-8080-exec-1] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=null
+2018-06-14 10:07:00.671 [http-nio-8080-exec-5] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=null
+2018-06-14 10:07:10.905 [http-nio-8080-exec-10] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-14 10:07:10.905 [http-nio-8080-exec-10] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-14 10:07:10.921 [http-nio-8080-exec-10] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-14 10:07:10.921 [http-nio-8080-exec-10] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-14 10:07:10.925 [http-nio-8080-exec-10] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-14 10:07:10.925 [http-nio-8080-exec-10] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-14 10:07:10.929 [http-nio-8080-exec-10] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-14 10:07:10.929 [http-nio-8080-exec-10] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-14 10:07:10.945 [http-nio-8080-exec-10] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-14 10:07:10.945 [http-nio-8080-exec-10] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-14 10:07:14.337 [http-nio-8080-exec-2] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=null
+2018-06-14 10:07:34.053 [http-nio-8080-exec-6] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=null
+2018-06-14 10:09:16.517 [http-nio-8080-exec-5] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-14 10:09:16.517 [http-nio-8080-exec-5] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-14 10:09:16.537 [http-nio-8080-exec-5] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-14 10:09:16.537 [http-nio-8080-exec-5] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-14 10:09:16.541 [http-nio-8080-exec-5] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-14 10:09:16.541 [http-nio-8080-exec-5] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-14 10:09:16.545 [http-nio-8080-exec-5] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-14 10:09:16.545 [http-nio-8080-exec-5] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-14 10:09:16.557 [http-nio-8080-exec-5] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-14 10:09:16.557 [http-nio-8080-exec-5] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-14 10:09:19.081 [http-nio-8080-exec-7] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=null
+2018-06-14 10:10:49.413 [http-nio-8080-exec-9] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=null
+2018-06-14 10:11:04.356 [http-nio-8080-exec-1] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=query content by id and return is not one
+2018-06-14 10:20:45.901 [http-nio-8080-exec-4] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-14 10:20:45.901 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-14 10:20:45.921 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-14 10:20:45.921 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-14 10:20:45.921 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-14 10:20:45.921 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-14 10:20:45.929 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-14 10:20:45.929 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-14 10:20:45.945 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-14 10:20:45.945 [http-nio-8080-exec-4] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-14 10:20:49.169 [http-nio-8080-exec-6] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=null
+2018-06-14 10:22:58.881 [http-nio-8080-exec-6] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=null
+2018-06-14 10:24:08.980 [http-nio-8080-exec-4] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-14 10:24:08.980 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-14 10:24:08.996 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-14 10:24:08.996 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-14 10:24:09.004 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-14 10:24:09.004 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-14 10:24:09.004 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-14 10:24:09.004 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-14 10:24:09.016 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-14 10:24:09.016 [http-nio-8080-exec-4] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-14 10:33:18.157 [http-nio-8080-exec-10] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-14 10:33:18.157 [http-nio-8080-exec-10] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-14 10:33:18.173 [http-nio-8080-exec-10] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-14 10:33:18.173 [http-nio-8080-exec-10] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-14 10:33:18.177 [http-nio-8080-exec-10] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-14 10:33:18.177 [http-nio-8080-exec-10] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-14 10:33:18.181 [http-nio-8080-exec-10] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-14 10:33:18.181 [http-nio-8080-exec-10] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-14 10:33:18.193 [http-nio-8080-exec-10] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-14 10:33:18.193 [http-nio-8080-exec-10] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-14 10:53:47.081 [http-nio-8080-exec-4] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-14 10:53:47.081 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-14 10:53:47.101 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-14 10:53:47.101 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-14 10:53:47.105 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-14 10:53:47.105 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-14 10:53:47.105 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-14 10:53:47.105 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-14 10:53:47.121 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-14 10:53:47.121 [http-nio-8080-exec-4] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-14 10:53:50.802 [http-nio-8080-exec-8] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 更具页码和limit获取文章
+2018-06-14 10:53:50.809 [http-nio-8080-exec-8] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 文章获取成功
+2018-06-14 10:54:08.090 [http-nio-8080-exec-5] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=query content by id and return is not one
+2018-06-14 10:54:13.160 [http-nio-8080-exec-6] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=query content by id and return is not one
+2018-06-14 10:54:15.528 [http-nio-8080-exec-7] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=query content by id and return is not one
+2018-06-14 10:54:36.777 [http-nio-8080-exec-9] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 更具页码和limit获取文章
+2018-06-14 10:54:36.781 [http-nio-8080-exec-9] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 文章获取成功
+2018-06-14 11:01:25.833 [http-nio-8080-exec-10] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-14 11:01:25.833 [http-nio-8080-exec-10] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-14 11:01:25.841 [http-nio-8080-exec-10] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-14 11:01:25.845 [http-nio-8080-exec-10] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-14 11:01:25.845 [http-nio-8080-exec-10] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-14 11:01:25.845 [http-nio-8080-exec-10] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-14 11:01:25.845 [http-nio-8080-exec-10] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-14 11:01:25.845 [http-nio-8080-exec-10] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-14 11:01:25.849 [http-nio-8080-exec-10] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-14 11:01:25.849 [http-nio-8080-exec-10] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-14 11:01:29.874 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 更具页码和limit获取文章
+2018-06-14 11:01:29.878 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 文章获取成功
+2018-06-14 11:01:45.632 [http-nio-8080-exec-6] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 更具页码和limit获取文章
+2018-06-14 11:01:45.632 [http-nio-8080-exec-6] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 文章获取成功
+2018-06-14 11:01:49.551 [http-nio-8080-exec-8] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 更具页码和limit获取文章
+2018-06-14 11:01:49.555 [http-nio-8080-exec-8] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 文章获取成功
+2018-06-14 11:01:54.882 [http-nio-8080-exec-10] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 更具页码和limit获取文章
+2018-06-14 11:01:54.882 [http-nio-8080-exec-10] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 文章获取成功
+2018-06-14 11:03:59.605 [http-nio-8080-exec-4] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-14 11:03:59.609 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-14 11:03:59.629 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-14 11:03:59.629 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-14 11:03:59.633 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-14 11:03:59.633 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-14 11:03:59.637 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-14 11:03:59.637 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-14 11:03:59.649 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-14 11:03:59.649 [http-nio-8080-exec-4] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-14 11:04:05.350 [http-nio-8080-exec-8] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 更具页码和limit获取文章
+2018-06-14 11:04:05.354 [http-nio-8080-exec-8] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 文章获取成功
+2018-06-14 11:04:50.786 [http-nio-8080-exec-5] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-14 11:04:50.786 [http-nio-8080-exec-5] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-14 11:04:50.794 [http-nio-8080-exec-5] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-14 11:04:50.794 [http-nio-8080-exec-5] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-14 11:04:50.794 [http-nio-8080-exec-5] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-14 11:04:50.794 [http-nio-8080-exec-5] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-14 11:04:50.798 [http-nio-8080-exec-5] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-14 11:04:50.798 [http-nio-8080-exec-5] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-14 11:04:50.802 [http-nio-8080-exec-5] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-14 11:04:50.802 [http-nio-8080-exec-5] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-14 11:05:20.728 [http-nio-8080-exec-10] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=null
+2018-06-14 11:07:27.154 [http-nio-8080-exec-3] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=null
+2018-06-14 11:08:37.985 [http-nio-8080-exec-7] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 更具页码和limit获取文章
+2018-06-14 11:08:37.989 [http-nio-8080-exec-7] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 文章获取成功
+2018-06-14 11:52:34.359 [http-nio-8080-exec-3] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-14 11:52:34.359 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-14 11:52:34.367 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-14 11:52:34.367 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-14 11:52:34.367 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-14 11:52:34.367 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-14 11:52:34.371 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-14 11:52:34.371 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-14 11:52:34.375 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-14 11:52:34.375 [http-nio-8080-exec-3] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-14 11:52:59.076 [http-nio-8080-exec-8] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=null
+2018-06-14 11:56:43.276 [http-nio-8080-exec-1] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=null
+2018-06-14 11:56:53.499 [http-nio-8080-exec-5] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=null
+2018-06-14 11:57:57.847 [http-nio-8080-exec-10] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=null
+2018-06-14 11:58:00.558 [http-nio-8080-exec-1] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 更具页码和limit获取文章
+2018-06-14 11:58:00.562 [http-nio-8080-exec-1] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 文章获取成功
+2018-06-14 11:58:37.462 [http-nio-8080-exec-2] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=null
+2018-06-14 11:58:38.302 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 更具页码和limit获取文章
+2018-06-14 11:58:38.306 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 文章获取成功
+2018-06-14 11:59:24.798 [http-nio-8080-exec-1] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 更具页码和limit获取文章
+2018-06-14 11:59:24.802 [http-nio-8080-exec-1] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 文章获取成功
+2018-06-14 12:00:02.698 [http-nio-8080-exec-4] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=null
+2018-06-14 12:00:37.475 [http-nio-8080-exec-6] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'yrf' for key 'slug'
+### The error may involve com.my.blog.website.dao.ContentVoMapper.updateByPrimaryKeySelective-Inline
+### The error occurred while setting parameters
+### SQL: update t_contents      SET title = ?,                       slug = ?,                              modified = ?,                       author_id = ?,                       type = ?,                       status = ?,                                                                        content = ?      where cid = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'yrf' for key 'slug'
+; SQL []; Duplicate entry 'yrf' for key 'slug'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'yrf' for key 'slug'
+2018-06-14 12:00:38.859 [http-nio-8080-exec-7] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'yrf' for key 'slug'
+### The error may involve com.my.blog.website.dao.ContentVoMapper.updateByPrimaryKeySelective-Inline
+### The error occurred while setting parameters
+### SQL: update t_contents      SET title = ?,                       slug = ?,                              modified = ?,                       author_id = ?,                       type = ?,                       status = ?,                                                                        content = ?      where cid = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'yrf' for key 'slug'
+; SQL []; Duplicate entry 'yrf' for key 'slug'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'yrf' for key 'slug'
+2018-06-14 12:00:39.430 [http-nio-8080-exec-8] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'yrf' for key 'slug'
+### The error may involve com.my.blog.website.dao.ContentVoMapper.updateByPrimaryKeySelective-Inline
+### The error occurred while setting parameters
+### SQL: update t_contents      SET title = ?,                       slug = ?,                              modified = ?,                       author_id = ?,                       type = ?,                       status = ?,                                                                        content = ?      where cid = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'yrf' for key 'slug'
+; SQL []; Duplicate entry 'yrf' for key 'slug'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'yrf' for key 'slug'
+2018-06-14 12:00:39.603 [http-nio-8080-exec-9] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'yrf' for key 'slug'
+### The error may involve com.my.blog.website.dao.ContentVoMapper.updateByPrimaryKeySelective-Inline
+### The error occurred while setting parameters
+### SQL: update t_contents      SET title = ?,                       slug = ?,                              modified = ?,                       author_id = ?,                       type = ?,                       status = ?,                                                                        content = ?      where cid = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'yrf' for key 'slug'
+; SQL []; Duplicate entry 'yrf' for key 'slug'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'yrf' for key 'slug'
+2018-06-14 12:00:39.798 [http-nio-8080-exec-10] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'yrf' for key 'slug'
+### The error may involve com.my.blog.website.dao.ContentVoMapper.updateByPrimaryKeySelective-Inline
+### The error occurred while setting parameters
+### SQL: update t_contents      SET title = ?,                       slug = ?,                              modified = ?,                       author_id = ?,                       type = ?,                       status = ?,                                                                        content = ?      where cid = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'yrf' for key 'slug'
+; SQL []; Duplicate entry 'yrf' for key 'slug'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'yrf' for key 'slug'
+2018-06-14 12:00:41.727 [http-nio-8080-exec-1] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'yrf' for key 'slug'
+### The error may involve com.my.blog.website.dao.ContentVoMapper.updateByPrimaryKeySelective-Inline
+### The error occurred while setting parameters
+### SQL: update t_contents      SET title = ?,                       slug = ?,                              modified = ?,                       author_id = ?,                       type = ?,                       status = ?,                                                                        content = ?      where cid = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'yrf' for key 'slug'
+; SQL []; Duplicate entry 'yrf' for key 'slug'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'yrf' for key 'slug'
+2018-06-14 12:00:42.107 [http-nio-8080-exec-2] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'yrf' for key 'slug'
+### The error may involve com.my.blog.website.dao.ContentVoMapper.updateByPrimaryKeySelective-Inline
+### The error occurred while setting parameters
+### SQL: update t_contents      SET title = ?,                       slug = ?,                              modified = ?,                       author_id = ?,                       type = ?,                       status = ?,                                                                        content = ?      where cid = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'yrf' for key 'slug'
+; SQL []; Duplicate entry 'yrf' for key 'slug'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'yrf' for key 'slug'
+2018-06-14 12:00:42.278 [http-nio-8080-exec-3] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'yrf' for key 'slug'
+### The error may involve com.my.blog.website.dao.ContentVoMapper.updateByPrimaryKeySelective-Inline
+### The error occurred while setting parameters
+### SQL: update t_contents      SET title = ?,                       slug = ?,                              modified = ?,                       author_id = ?,                       type = ?,                       status = ?,                                                                        content = ?      where cid = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'yrf' for key 'slug'
+; SQL []; Duplicate entry 'yrf' for key 'slug'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'yrf' for key 'slug'
+2018-06-14 12:00:42.490 [http-nio-8080-exec-4] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'yrf' for key 'slug'
+### The error may involve com.my.blog.website.dao.ContentVoMapper.updateByPrimaryKeySelective-Inline
+### The error occurred while setting parameters
+### SQL: update t_contents      SET title = ?,                       slug = ?,                              modified = ?,                       author_id = ?,                       type = ?,                       status = ?,                                                                        content = ?      where cid = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'yrf' for key 'slug'
+; SQL []; Duplicate entry 'yrf' for key 'slug'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'yrf' for key 'slug'
+2018-06-14 12:16:15.927 [http-nio-8080-exec-4] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-14 12:16:15.927 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-14 12:16:15.947 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-14 12:16:15.947 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-14 12:16:15.951 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-14 12:16:15.951 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-14 12:16:15.955 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-14 12:16:15.955 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-14 12:16:15.971 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-14 12:16:15.971 [http-nio-8080-exec-4] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-14 12:26:11.882 [http-nio-8080-exec-5] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=null
+2018-06-14 12:26:32.730 [http-nio-8080-exec-8] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=query content by id and return is not one
+2018-06-14 12:26:34.134 [http-nio-8080-exec-9] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=query content by id and return is not one
+2018-06-14 12:26:34.797 [http-nio-8080-exec-10] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=query content by id and return is not one
+2018-06-14 12:26:52.644 [http-nio-8080-exec-2] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=query content by id and return is not one
+2018-06-14 12:26:53.438 [http-nio-8080-exec-3] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=query content by id and return is not one
+2018-06-14 12:26:53.639 [http-nio-8080-exec-4] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=query content by id and return is not one
+2018-06-14 12:27:24.392 [http-nio-8080-exec-4] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-14 12:27:24.392 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-14 12:27:24.416 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-14 12:27:24.416 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-14 12:27:24.419 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-14 12:27:24.419 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-14 12:27:24.424 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-14 12:27:24.424 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-14 12:27:24.438 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-14 12:27:24.438 [http-nio-8080-exec-4] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-14 12:27:27.619 [http-nio-8080-exec-7] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=null
+2018-06-14 12:27:29.597 [http-nio-8080-exec-8] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 更具页码和limit获取文章
+2018-06-14 12:27:29.601 [http-nio-8080-exec-8] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 文章获取成功
+2018-06-14 12:28:06.407 [http-nio-8080-exec-3] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=null
+2018-06-14 12:28:10.039 [http-nio-8080-exec-5] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=null
+2018-06-14 12:28:28.438 [http-nio-8080-exec-6] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=null
+2018-06-14 12:36:28.648 [http-nio-8080-exec-4] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-14 12:36:28.648 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-14 12:36:28.675 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-14 12:36:28.675 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-14 12:36:28.678 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-14 12:36:28.678 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-14 12:36:28.681 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-14 12:36:28.681 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-14 12:36:28.695 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-14 12:36:28.695 [http-nio-8080-exec-4] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-14 12:38:28.055 [http-nio-8080-exec-4] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-14 12:38:28.055 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-14 12:38:28.077 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-14 12:38:28.077 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-14 12:38:28.084 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-14 12:38:28.084 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-14 12:38:28.087 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-14 12:38:28.087 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-14 12:38:28.102 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-14 12:38:28.102 [http-nio-8080-exec-4] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-14 12:42:04.692 [http-nio-8080-exec-4] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-14 12:42:04.692 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-14 12:42:04.710 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-14 12:42:04.710 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-14 12:42:04.714 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-14 12:42:04.714 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-14 12:42:04.721 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-14 12:42:04.721 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-14 12:42:04.737 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-14 12:42:04.737 [http-nio-8080-exec-4] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-14 12:44:31.189 [http-nio-8080-exec-4] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-14 12:44:31.190 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-14 12:44:31.214 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-14 12:44:31.214 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-14 12:44:31.217 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-14 12:44:31.217 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-14 12:44:31.220 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-14 12:44:31.220 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-14 12:44:31.234 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-14 12:44:31.234 [http-nio-8080-exec-4] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-14 12:44:53.994 [http-nio-8080-exec-2] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=null
+2018-06-14 12:48:10.177 [http-nio-8080-exec-10] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=null
+2018-06-14 12:48:14.135 [http-nio-8080-exec-1] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=null
+2018-06-14 12:48:41.349 [http-nio-8080-exec-5] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=Request method 'POST' not supported
+2018-06-14 12:48:42.287 [http-nio-8080-exec-6] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=Request method 'POST' not supported
+2018-06-14 12:48:42.472 [http-nio-8080-exec-7] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=Request method 'POST' not supported
+2018-06-14 12:48:42.655 [http-nio-8080-exec-8] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=Request method 'POST' not supported
+2018-06-14 12:50:17.879 [http-nio-8080-exec-4] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-14 12:50:17.880 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-14 12:50:17.901 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-14 12:50:17.901 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-14 12:50:17.905 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-14 12:50:17.905 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-14 12:50:17.908 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-14 12:50:17.908 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-14 12:50:17.925 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-14 12:50:17.925 [http-nio-8080-exec-4] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-14 12:50:22.520 [http-nio-8080-exec-8] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=null
+2018-06-14 12:50:23.933 [http-nio-8080-exec-9] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=null
+2018-06-14 12:50:26.564 [http-nio-8080-exec-10] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=null
+2018-06-14 12:51:45.666 [http-nio-8080-exec-4] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-14 12:51:45.666 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-14 12:51:45.687 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-14 12:51:45.688 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-14 12:51:45.695 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-14 12:51:45.695 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-14 12:51:45.698 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-14 12:51:45.698 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-14 12:51:45.712 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-14 12:51:45.712 [http-nio-8080-exec-4] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-14 12:51:56.790 [http-nio-8080-exec-10] ERROR com.my.blog.website.controller.ExceptionHandleController - find exception:e=null
+2018-06-14 12:53:35.560 [http-nio-8080-exec-1] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 更具页码和limit获取文章
+2018-06-14 12:53:35.562 [http-nio-8080-exec-1] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 文章获取成功
+2018-06-14 12:53:40.315 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 更具页码和limit获取文章
+2018-06-14 12:53:40.318 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 文章获取成功
+2018-06-14 12:56:38.068 [http-nio-8080-exec-3] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-14 12:56:38.068 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-14 12:56:38.076 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-14 12:56:38.076 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-14 12:56:38.079 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-14 12:56:38.079 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-14 12:56:38.081 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-14 12:56:38.081 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-14 12:56:38.088 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-14 12:56:38.088 [http-nio-8080-exec-3] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-14 12:56:43.637 [http-nio-8080-exec-6] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-14 12:56:43.637 [http-nio-8080-exec-6] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-14 12:56:43.645 [http-nio-8080-exec-6] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-14 12:56:43.645 [http-nio-8080-exec-6] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-14 12:56:43.646 [http-nio-8080-exec-6] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-14 12:56:43.646 [http-nio-8080-exec-6] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-14 12:56:43.649 [http-nio-8080-exec-6] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-14 12:56:43.649 [http-nio-8080-exec-6] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-14 12:56:43.655 [http-nio-8080-exec-6] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-14 12:56:43.655 [http-nio-8080-exec-6] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-14 12:56:54.549 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 更具页码和limit获取文章
+2018-06-14 12:56:54.551 [http-nio-8080-exec-4] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 文章获取成功
+2018-06-14 12:58:44.161 [http-nio-8080-exec-3] INFO  com.my.blog.website.controller.admin.IndexController - Enter admin index method
+2018-06-14 12:58:44.161 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-06-14 12:58:44.167 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit getStatistics method!
+2018-06-14 12:58:44.167 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-06-14 12:58:44.169 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Exit recentComments method
+2018-06-14 12:58:44.169 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - Enter recentContents method
+2018-06-14 12:58:44.172 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.SiteServiceImpl - exit recentContents method!
+2018-06-14 12:58:44.172 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.LogServiceImpl - Enter getLogs method:page=1,limit=5
+2018-06-14 12:58:44.176 [http-nio-8080-exec-3] DEBUG com.my.blog.website.service.impl.LogServiceImpl - exit getLogs method
+2018-06-14 12:58:44.176 [http-nio-8080-exec-3] DEBUG com.my.blog.website.controller.admin.IndexController - Exit admin index method
+2018-06-14 12:58:48.765 [http-nio-8080-exec-8] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 更具页码和limit获取文章
+2018-06-14 12:58:48.766 [http-nio-8080-exec-8] DEBUG com.my.blog.website.service.impl.ContentServiceImpl - 文章获取成功

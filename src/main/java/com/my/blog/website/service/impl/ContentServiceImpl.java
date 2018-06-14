@@ -124,10 +124,11 @@ public class ContentServiceImpl implements IContentService {
 
     /**
      * 修改用户博文
-     * @author rfYang
-     * @date 2018/6/11 9:04
+     *
      * @param [contentVo]
      * @return java.lang.String
+     * @author rfYang
+     * @date 2018/6/11 9:04
      */
     @Override
     @Transactional
@@ -170,22 +171,23 @@ public class ContentServiceImpl implements IContentService {
 
     /**
      * 删除文章
-     * @author rfYang
-     * @date 2018/6/11 9:30
+     *
      * @param [cid]
      * @return java.lang.String
+     * @author rfYang
+     * @date 2018/6/11 9:30
      */
     @Override
     @Transactional
     public String deleteByCid(Integer cid) {
         //cid是否有对应的博文
-        ContentVo contentVo = this.getContents(cid+"");
-        if(contentVo!=null){
+        ContentVo contentVo = this.getContents(cid + "");
+        if (contentVo != null) {
             int result = contentVoMapper.deleteByPrimaryKey(cid);
-            if(result==1){
+            if (result == 1) {
                 relationshipService.deleteById(cid, null);
                 return WebConst.SUCCESS_RESULT;
-            }else{
+            } else {
                 return "博文条目数有错";
             }
         }
@@ -198,5 +200,19 @@ public class ContentServiceImpl implements IContentService {
         if (null != contentVo && null != contentVo.getCid()) {
             contentVoMapper.updateByPrimaryKeySelective(contentVo);
         }
+    }
+
+    @Override
+    public PageInfo<ContentVo> getContents(int p, int limit) {
+        logger.debug("更具页码和limit获取文章");
+        ContentVoExample example = new ContentVoExample();
+        ContentVoExample.Criteria criteria = example.createCriteria();
+        example.setOrderByClause("created desc");
+        criteria.andTypeEqualTo(Types.ARTICLE.getType()).andStatusEqualTo(Types.PUBLISH.getType());
+        PageHelper.startPage(p, limit);
+        List<ContentVo> contentVos = contentVoMapper.selectByExampleWithBLOBs(example);
+        PageInfo<ContentVo> pageInfo =  new PageInfo<ContentVo>(contentVos);
+        logger.debug("文章获取成功");
+        return pageInfo;
     }
 }

@@ -24,4 +24,6 @@ public interface IContentService {
     String deleteByCid(Integer cid);
 
     void updateContentByCid(ContentVo temp);
+
+    PageInfo<ContentVo> getContents(int p, int limit);
 }
