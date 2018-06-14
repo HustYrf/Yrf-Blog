@@ -148,4 +148,21 @@ public class PageController extends BaseController {
         }
         return RestResponseBo.ok();
     }
+    /**
+     * 删除page页面
+     * @author rfYang
+     * @date 2018/6/14 9:18
+     * @param [request, cid]
+     * @return com.my.blog.website.model.Bo.RestResponseBo
+     */
+    @PostMapping(value="/delete")
+    @ResponseBody
+    public RestResponseBo deletePage(HttpServletRequest request,@RequestParam Integer cid){
+        String result = contentService.deleteByCid(cid);
+        logService.insertLog(LogActions.DELE_ARTICLE.getAction(),String.valueOf(cid),request.getRemoteAddr(),this.user(request).getUid());
+        if(!result.equals(WebConst.SUCCESS_RESULT)){
+            return RestResponseBo.fail(result);
+        }
+        return RestResponseBo.ok();
+    }
 }
